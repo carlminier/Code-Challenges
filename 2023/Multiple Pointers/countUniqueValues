@@ -13,3 +13,9 @@ countUniqueValues([1,1,1,1,1,2]) //2
 //countUniqueValues([]) //0
 //countUniqueValues([-2,-1,-1,0,1]) //4
   
+//Pseudo code & thoughts
+//no need to sort since array is always sorted.
+//Create 2 separated for loops
+//first for loop goes through each index and checks if current index is bigger than the next index
+//If index is bigger, then second for loop will take the bigger number and replace the smaller number in array
+//once the biggest number in array is reached, get length of array + 1 from second for loop
