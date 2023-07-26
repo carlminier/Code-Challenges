@@ -1,4 +1,4 @@
-Frequency Counters
+Frequency Counters:
 
 This pattern uses objects or sets to collect values/frequencies of values. Time complexity O(n).
 
