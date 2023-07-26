@@ -1,3 +1,7 @@
+Problem:
+Given two strings, write a function to determine if the second string is an anagram of the first. 
+An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
 function validAnagram(string1, string2){
     
   if(string1.length !== string2.length){
@@ -27,3 +31,12 @@ function validAnagram(string1, string2){
 }
 
 validAnagram("pizza", "zazip");
+
+//Pseudo code & thoughts
+// If input "pizza" and "zazip" output = true
+// Strings only, including empty string.
+
+// ex1: string1("pizza"), string2("zazip") //true
+// ex2: string1("snow"), string2("storm") //false
+// ex3: string1("this is a string"), string2("thisisastring") //true
+// ex4: string1(123), string2(345) // false, error, undefined, null?
