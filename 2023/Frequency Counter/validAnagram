@@ -8,7 +8,7 @@ function validAnagram(string1, string2){
       return false;
   }
   if(string1 >= 0 || string2 >= 0){
-    return error
+    return false
   }
   
   let lookup = {};
