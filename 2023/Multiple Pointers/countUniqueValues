@@ -13,7 +13,6 @@ function countUniqueValues(numArr){
   }
     return i + 1
 }
- 
 
 countUniqueValues([1,2,3,4,5,5,6,7,8,8]) //8
 //countUniqueValues([1,2,3,4,4,4,7,7,12,12,13]) //7
