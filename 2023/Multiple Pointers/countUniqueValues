@@ -1,0 +1,27 @@
+Implement a function called countUniqueValues, which accepts a sorted array, and counts the unique value in the array.
+There can be negative numbers in the array, but it will always be sorted.
+
+
+function countUniqueValues(numArr){
+    if(numArr.length === 0) return 0;
+  let i = 0;
+  for(let j = 1; j < numArr.length; j++){
+    if(numArr[i] !== numArr[j]){
+      i++  
+      numArr[i] = numArr[j];
+    }
+  }
+    return i + 1
+}
+
+countUniqueValues([1,2,3,4,5,5,6,7,8,8]) //8
+//countUniqueValues([1,2,3,4,4,4,7,7,12,12,13]) //7
+//countUniqueValues([]) //0
+//countUniqueValues([-2,-1,-1,0,1]) //4
+  
+//Pseudo code & thoughts
+//no need to sort since array is always sorted.
+//Create 2 separated for loops
+//first for loop goes through each index and checks if current index is bigger than the next index
+//If index is bigger, then second for loop will take the bigger number and replace the smaller number in array
+//once the biggest number in array is reached, get length of array + 1 from second for loop

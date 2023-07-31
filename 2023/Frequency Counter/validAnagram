@@ -1,7 +1,14 @@
+Problem:
+Given two strings, write a function to determine if the second string is an anagram of the first. 
+An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
 function validAnagram(string1, string2){
     
   if(string1.length !== string2.length){
       return false;
+  }
+  if(string1 >= 0 || string2 >= 0){
+    return false
   }
   
   let lookup = {};
@@ -27,4 +34,5 @@ function validAnagram(string1, string2){
 }
 
 validAnagram("pizza", "zazip");
+// validAnagram(1234, 1234);
 
